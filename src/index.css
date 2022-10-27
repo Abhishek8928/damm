@@ -1,0 +1,107 @@
+/* =========================
+-> Color Palette
+
+Blue    ->  #1C98ED
+Black   ->  #010103
+White   ->  #ffffff
+Orange  ->  #ffad60
+
+========================= */
+
+:root {
+  --blue: #1C98ED;
+  --black: #010103;
+  --white: #fff;
+  --orange: #ffad60;
+}
+
+/* =========================
+-> CSS RESET
+========================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  background-color: var(--black);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.82)
+    ),
+    url("/public/images/mainbg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.75;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswwald", sans-serif;
+  /* text-transform: uppercase; */
+}
+
+/* ========================= 
+-> Background Colors
+========================= */
+
+.blueBg {
+  background-color: var(--blue);
+}
+.blackBg {
+  background-color: var(--black);
+}
+.whiteBg {
+  background-color: var(--white);
+}
+.orangeBg {
+  background-color: var(--orange);
+}
+
+/* ========================= 
+-> Text Colors
+========================= */
+
+.blueTxt {
+  color: var(--blue);
+}
+.blackTxt {
+  color: var(--black);
+}
+.whiteTxt {
+  color: var(--white);
+}
+.orangeTxt {
+  color: var(--orange);
+}
+
+
+::selection {
+  background-color: var(--white);
+  color: var(--black);
+}
